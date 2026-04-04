@@ -211,6 +211,7 @@ http://localhost/php-academic-suite
 
 **Khalid Morjane**  
 Information Systems & AI Student
+GitHub: https://github.com/KHALIDMRJ
 
 ---
 
@@ -222,4 +223,8 @@ FPK — Faculté Polydisciplinaire Khouribga
 
 # ⭐ If you like this project
 
-Give it a ⭐ on GitHub
+If you like this project:
+
+⭐ Star the repository
+🍴 Fork the project
+🧠 Contribute
