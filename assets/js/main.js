@@ -164,17 +164,29 @@ function validateField(input) {
 
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.field-input').forEach(input => {
-    input.addEventListener('blur',  () => validateField(input));
-    input.addEventListener('input', () => { if (input.classList.contains('error')) validateField(input); });
+    // Validate on blur (leaving the field)
+    input.addEventListener('blur', () => validateField(input));
+    // Re-validate on every keystroke once an error was shown — clears it as soon as fixed
+    input.addEventListener('input', () => {
+      if (input.classList.contains('error') || input.classList.contains('valid')) {
+        validateField(input);
+      }
+    });
   });
 
   document.querySelectorAll('form').forEach(form => {
     form.addEventListener('submit', e => {
-      let valid = true;
+      let firstInvalid = null;
       form.querySelectorAll('.field-input').forEach(input => {
-        if (!validateField(input)) valid = false;
+        const ok = validateField(input);
+        if (!ok && !firstInvalid) firstInvalid = input;
       });
-      if (!valid) e.preventDefault();
+      if (firstInvalid) {
+        e.preventDefault();
+        // Scroll the invalid field into view and focus it
+        firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        setTimeout(() => firstInvalid.focus(), 300);
+      }
     });
   });
 });

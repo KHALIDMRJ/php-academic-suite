@@ -572,11 +572,11 @@ code, .mono { font-family: var(--font-mono); }
 
 /* ── PATTERN DISPLAY ── */
 .pattern-display {
-  font-family: var(--font-mono);
+  font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
   font-size: 15px;
-  line-height: 1.35;
+  line-height: 1.5;
   color: var(--jade);
-  letter-spacing: 1px;
+  letter-spacing: 0;
   padding: 1.5rem;
   background: var(--bg-raised);
   border: 1px solid var(--border-dim);
@@ -584,6 +584,8 @@ code, .mono { font-family: var(--font-mono); }
   white-space: pre;
   overflow-x: auto;
   margin: 0;
+  font-variant-ligatures: none;
+  tab-size: 1;
 }
 
 /* ── MULTIPLICATION TABLE ── */

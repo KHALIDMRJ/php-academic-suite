@@ -247,11 +247,12 @@ function estPair(int $n): bool { return $n % 2 === 0; }
  */
 function genererTriangle(int $hauteur): array
 {
-    $rows = [];
+    $rows    = [];
+    $maxWidth = 2 * $hauteur - 1; // widest row (bottom)
     for ($i = 1; $i <= $hauteur; $i++) {
-        $spaces = str_repeat('  ', $hauteur - $i);  // 2 spaces per indent level
-        $stars  = str_repeat('*', 2 * $i - 1);
-        $rows[] = $spaces . $stars;
+        $stars   = str_repeat('*', 2 * $i - 1);
+        $padding = ($maxWidth - strlen($stars)) / 2; // exact centering
+        $rows[]  = str_repeat(' ', (int)$padding) . $stars;
     }
     return $rows;
 }
