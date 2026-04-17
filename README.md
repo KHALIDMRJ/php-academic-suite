@@ -13,7 +13,7 @@
 
 # 📸 Project Preview
 
-![Preview](screenshots/home.png)
+![Preview](https://raw.githubusercontent.com/KHALIDMRJ/php-academic-suite/main/screenshots/home.png)
 
 ---
 
@@ -138,29 +138,29 @@ http://localhost/php-academic-suite
 
 ## 🏠 Home Interface
 
-![Home](screenshots/home.png)
+![Preview](https://raw.githubusercontent.com/KHALIDMRJ/php-academic-suite/main/screenshots/home.png)
+
 
 ---
 
 ## 🎓 Student System
 
-![Student Form](screenshots/ex1_1.png)
+![Student Form](https://raw.githubusercontent.com/KHALIDMRJ/php-academic-suite/main/screenshots/ex1_1.png)
 
-![Student Results](screenshots/ex1_2.png)
+![Student Form](https://raw.githubusercontent.com/KHALIDMRJ/php-academic-suite/main/screenshots/ex1_2.png)
 
-![Student Advanced](screenshots/ex1_3.png)
+![Student Form](https://raw.githubusercontent.com/KHALIDMRJ/php-academic-suite/main/screenshots/ex1_3.png)
 
 ---
 
 ## 🔺 Pattern Generator
-
-![Patterns](screenshots/patterns.png)
+![Patterns](https://raw.githubusercontent.com/KHALIDMRJ/php-academic-suite/main/screenshots/patterns.png)
 
 ---
 
 ## 🏗 Architecture Section
 
-![Architecture](screenshots/architecture.png)
+![Architecture](https://raw.githubusercontent.com/KHALIDMRJ/php-academic-suite/main/screenshots/architecture.png)
 
 ---
 
